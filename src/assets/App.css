@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  font-family: 'Vazirmatn', sans-serif;
+}
+header{
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  z-index: 9999;
+  width: 100%;
+  height: auto;
+}
+.section-1-bg{
+  background-image: url('https://i1.wp.com/dvd-fever.co.uk/dvd-fever/wp-content/uploads/2022/09/spider-man-no-way-home-a.jpg?fit=1000%2C563&ssl=1');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

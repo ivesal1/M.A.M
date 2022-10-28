@@ -1,14 +1,19 @@
-import './App.css';
-import './reset.css'
-import Nav from './Nav';
+import './assets/reset.css'
+import './assets/App.css'
+import Section1 from './components/Home/Section-1'
+import Nav from './components/Nav';
 
 
 function App() {
   return (
-    <main className='contianar'>
-      <header>
+    <main>
+      <>
         <Nav />
-      </header>
+      </>
+      <section>
+        <Section1 />
+      </section>
+     
     </main>
   )
 }
