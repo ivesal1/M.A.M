@@ -1,19 +1,15 @@
 import './assets/reset.css'
 import './assets/App.css'
-import Section1 from './components/Home/Section-1'
 import Nav from './components/Nav';
+import { RouterProvider } from 'react-router-dom';
+import { routes } from './routes/routes';
 
 
 function App() {
   return (
     <main>
-      <>
-        <Nav />
-      </>
-      <section>
-        <Section1 />
-      </section>
-     
+      <Nav />
+      <RouterProvider router={routes} />
     </main>
   )
 }

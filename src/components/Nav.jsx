@@ -12,8 +12,8 @@ export default function Nav() {
                         LOGO
                     </div>
                     <ul className='nav-item'>
-                        {nav.map((item) => {
-                            return <li>{item}</li>
+                        {nav.map((item,i) => {
+                            return <li key={i}>{item}</li>
                         })}
                     </ul>
                 </div>
