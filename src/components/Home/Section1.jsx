@@ -38,7 +38,7 @@ export default function Section1() {
                                         <div className='title'>{title}</div>
                                         <div className='des'>{des}</div>
                                         <div>
-                                            <button className='bg-black'>
+                                            <button>
                                                 See More
                                             </button>
                                         </div>
