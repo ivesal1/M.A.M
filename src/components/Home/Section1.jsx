@@ -1,7 +1,8 @@
 import './../../assets/Home-sec1.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import { useState } from 'react';
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
+
 
 import "swiper/css/pagination";
 import 'swiper/css'
@@ -21,9 +22,7 @@ export default function Section1() {
                 <Swiper
                     slidesPerView={1}
                     autoplay={true}
-                    pauseOnMouseEnter={true}
-                    reverseDirection={true}
-                    modules={[Pagination]}
+                    modules={[Pagination,Autoplay]}
                     delay={3000}
                     pagination={{
                     type: "progressbar",
