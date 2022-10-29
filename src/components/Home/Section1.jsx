@@ -9,7 +9,6 @@ import 'swiper/css/autoplay'
 
 
 export default function Section1() {
-    // const [slider, setSlider] = useState([])
     const imgSrc = [
         {url: 'https://www.apple.com/au/tv-pr/shows-and-films/t/ted-lasso/images/season-2/show-home-graphic-header/4x1/Apple_TV_Ted_Lasso_key_art_graphic_header_4_1_show_home.jpg.og.jpg?1663268754815',title:'Ted Lasso',des:'Winner of 11 Emmy® Awards, including back-to-back Outstanding Comedy Series wins (2021, 2022).'},
         {url: 'https://images.unsplash.com/photo-1502759683299-cdcd6974244f?auto=format&fit=crop&w=440&h=220&q=60',title:'Title',des:'Lorem ipsum dolor sit amet consectetur adipisicing elit.'},
