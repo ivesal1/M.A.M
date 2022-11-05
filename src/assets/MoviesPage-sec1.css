@@ -1,0 +1,21 @@
+.sec1-img{
+    width: 100vw;
+    height: 100vh;
+}
+.grandient-maker{
+	background: linear-gradient(to bottom,transparent 46%,rgba(18, 17, 17, 0.07) 64%,rgba(0,0,0,.14) 83%,rgba(0,0,0,.26) 92%);
+    width: 100vw;
+    height: 100vh;
+}
+.movies-page-btn{
+    color: #000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    font-weight: 600;
+    height: 36px;
+}

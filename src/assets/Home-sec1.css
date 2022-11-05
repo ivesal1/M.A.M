@@ -24,7 +24,7 @@
     color: #fff;
     font-size: 30px;
 }
-button{
+.home-button{
     width: 100%;
     color: #000;
     text-align: center;
@@ -38,8 +38,12 @@ button{
     font-weight: 600;
     height: 36px;
 }
-img{
+.back-slider{
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+}
+.front-slider{
+    width: 210px;
+    height: 120px;
 }

@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Movies() {
   return (
-    <div>Moives</div>
+    <div className='mt-52'>Movies</div>
   )
 }

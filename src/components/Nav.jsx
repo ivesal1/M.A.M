@@ -1,6 +1,11 @@
 import './../assets/Nav.css'
+import { Link } from 'react-router-dom'
+
 const nav = [
-    'Home','Movies','TVshows','Contact Us'
+    { text: 'Home', link: '/' },
+    { text: 'Movies', link: '/Movies' },
+    { text: 'TVshows', link: '/tvshows' },
+    { text: 'Contact Us', link: '/contact-us' },
 ]
 
 export default function Nav() {
@@ -12,8 +17,12 @@ export default function Nav() {
                         LOGO
                     </div>
                     <ul className='nav-item'>
-                        {nav.map((item,i) => {
-                            return <li key={i}>{item}</li>
+                        {nav.map(({ text, link }, i) => {
+                            return (
+                                <Link to={link}>
+                                    <li key={i}>{text}</li>
+                                </Link>
+                            )
                         })}
                     </ul>
                 </div>
