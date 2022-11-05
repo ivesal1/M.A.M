@@ -27,7 +27,7 @@ export default function MoviesPage() {
     getMoviesPage();
     getTrialer();
     console.log(movieDetails);
-  },[loading])
+  }, [loading])
 
   return (
     <div>
@@ -35,7 +35,7 @@ export default function MoviesPage() {
           <Section1 src={movieDetails.backdrop_path} title={movieDetails.original_title} des={movieDetails.overview} tag={movieDetails.tagline} />
         : <ReactLoading className="mt-20 mx-auto" type="spokes" color="#000" />
       }
-      <Section2 />
+      <Section2 arr={trailer} TrailerSrc={movieDetails.backdrop_path} />
     </div>
   )
 }
