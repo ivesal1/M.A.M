@@ -15,9 +15,6 @@ header{
     right: 0;
     left: 0;
 }
-nav div:first-child{
-    display: flex;
-}
 .logo{
     margin-right: 40px;
 }
@@ -41,4 +38,9 @@ ul{
 }
 .user-search-bar div:first-child{
     margin: 0 20px;
+}
+.sign-in-co{
+    transform: translate(-50%, 0);
+    left: 50%;
+    top: 25%;
 }

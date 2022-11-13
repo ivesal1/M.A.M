@@ -41,9 +41,9 @@ export default function Section1() {
                     >
                             {slider.map((item,index) => {
                                 return (
-                                        <SwiperSlide>
+                                        <SwiperSlide key={item.id}>
                                             <div className='reletive'>
-                                                <img className="back-slider" key={index} src={`${baseImgUrl}/w1280${item.backdrop_path}`} alt={item} />
+                                                <img className="back-slider" src={`${baseImgUrl}/w1280${item.backdrop_path}`} alt={item} />
                                             <div className='des bottom-44 left-10 absolute w-1/6'>
                                                 <div className='text-4xl font-bold'>{ item.title}</div>
                                                     <p className='text-justify text-xl'>
