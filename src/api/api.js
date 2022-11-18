@@ -1,2 +1,6 @@
 export const popularApi = 'https://api.themoviedb.org/3/movie/popular?api_key=69747a367d6ce2c8b1771ae753508b72&language=en-US'
 export const baseImgUrl = 'http://image.tmdb.org/t/p/'
+export const baseUrl = 'https://api.themoviedb.org/3/'
+export const configuration = 'https://api.themoviedb.org/3/configuration?api_key=69747a367d6ce2c8b1771ae753508b72'
+export const movieUrl = 'https://api.themoviedb.org/3/movie/550/images?api_key=69747a367d6ce2c8b1771ae753508b72&language=en-US&include_image_language=en'
+export const apiKey = '?api_key=69747a367d6ce2c8b1771ae753508b72'

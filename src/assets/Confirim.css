@@ -1,0 +1,6 @@
+.center-confirm{
+    width: 30vw;
+    top: 40%;
+    left:50%;
+    transform:translateX(-50%);
+}
