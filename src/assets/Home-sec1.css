@@ -47,3 +47,9 @@
     width: 210px;
     height: 120px;
 }
+.grandient-blur{
+    background-image: linear-gradient(at bottom ,#000 0,rgba(0,0,0,0) 72%);
+    width: 100vw;
+    height: 100vh;
+    /* transform: rotate(180deg); */
+}

@@ -2,34 +2,12 @@ import React from 'react';
 import { useContext } from 'react';
 import { useState } from 'react';
 import { signInContext } from '../../context/UserContext';
-import { apiKey, baseUrl } from '../../api/api';
 import './../../assets/SignIn.css'
-import axios from 'axios';
-import { useEffect } from 'react';
 
-const SignIn = ({ close }) => {
-    const { signIn, setSignIn, createToken,sessionId, setSessionId } = useContext(signInContext)
+const SignIn = ({ close, closeConfirm ,closeAfter}) => {
+    const { createToken } = useContext(signInContext);
     const [userName, setUserName] = useState('')
     const [password, setPassword] = useState('')
-     
-    const createSession = async () => {
-        await axios.post(`${baseUrl}authentication/token/validate_with_login${apiKey}`, {   
-            "username": userName,
-            "password":password,
-            "request_token": signIn.token
-        }).then(res => {
-            console.log(res);
-        })
-        await axios.post(`${baseUrl}authentication/session/new${apiKey}`, {
-            "request_token": signIn.token
-        }).then(res => {
-            setSessionId(res.data.session_id)
-        });
-    }   
-    
-    useEffect(() => {
-        createToken()
-    },[])
     
     return (
         <div className='bg-white rounded-lg sign-co shadow-xl p-5'>
@@ -45,7 +23,8 @@ const SignIn = ({ close }) => {
             <div className='flex flex-col justify-center items-center'>
                 <form onSubmit={e => {
                     e.preventDefault();
-                    createSession()
+                    createToken(userName, password);
+                    if (localStorage.getItem('session_id')) { window.location.reload(true) }
                 }} className='flex justify-center flex-col items-center'>
                     <div className='text-black text-4xl font-bold mb-5 mt-5'>
                         Log in
@@ -57,7 +36,7 @@ const SignIn = ({ close }) => {
                         <input onChange={(e) => setPassword(e.target.value)} type="password" className='border rounded-lg text-black p-2 input-sign' />
                     </div>
                     <div className='flex justify-center'>
-                        <button style={{ backgroundColor: '#007AFD' }} type="submit" className='text-white px-4 py-1 rounded-lg text-center mt-2 border font-bold'>
+                        <button style={{ backgroundColor: '#007AFD' }} onClick={closeConfirm} type="submit" className='text-white px-4 py-1 rounded-lg text-center mt-2 border font-bold'>
                             Submit
                         </button>
                     </div>
