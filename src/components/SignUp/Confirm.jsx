@@ -5,7 +5,7 @@ export default function Confirm({ yes, no }) {
   return (
       <div className='text-black shadow bg-white flex justify-center fixed center-confirm rounded-lg p-5'>
           <div className='text-center w-1/2'>
-              <h2>
+              <h2 className='text-2xl'>
                   Are you sure ?
               </h2>
               <div className='flex justify-around items-center mt-10'>

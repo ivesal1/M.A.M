@@ -1,7 +1,10 @@
 import React from 'react'
+import Section from '../components/movie/Section'
 
 export default function Movies() {
   return (
-    <div className='mt-52'>Movies</div>
+    <section className='mt-32'>
+      <Section/>
+    </section>
   )
 }
